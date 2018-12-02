@@ -1,0 +1,416 @@
+html {
+  font-family: 'Oswald', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navbar-brand img {
+  height: 70px;
+}
+
+nav .navbar-nav li a {
+  color: rgb(187, 187, 66) !important;
+  padding: 20px 0px;
+  margin: 0px 10px;
+  position: relative;
+  opacity: 0.75;
+}
+
+nav .navbar-nav li a:hover {
+  opacity: 1;
+}
+
+nav .navbar-nav li a::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: rgb(187, 187, 66);
+}
+
+nav .navbar-nav li a::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+nav .navbar-nav li a:hover::before {
+  width: 100%;
+}
+
+.navbar {
+  background-color: black !important;
+}
+
+.menu {
+  margin-top: -12px;
+}
+
+.socialmedias a {
+  color: rgb(187, 187, 66);
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 0px;
+  margin: 0px 10px;
+}
+
+.socialmedias a:hover {
+  color: white;
+}
+
+.image-container {
+  position: relative;
+}
+
+.bannerimage {
+  width: 100%;
+  position: relative;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  from {
+          -webkit-mask-position: 150%;
+  }
+  to {
+          -webkit-mask-position: -50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .centered {
+          position: absolute;
+          top: 33%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 24px;
+          text-align: center;
+          color: white;
+          font-family: 'Abril Fatface', cursive;
+          -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
+          -webkit-mask-size: 200%;
+          animation: shine 3s linear infinite;
+  }
+  @keyframes shine {
+          from {
+                  -webkit-mask-position: 150%;
+          }
+          to {
+                  -webkit-mask-position: -50%;
+          }
+  }
+}
+
+.mainbutton {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mainbutton {
+  background-color: rgb(187, 187, 66);
+  border-color: rgb(187, 187, 66);
+  color: rgb(255, 255, 255);
+}
+
+.mainbutton:active,
+.mainbutton:focus,
+.mainbutton:hover {
+  background-color: transparent !important;
+  border: 1px solid rgb(187, 187, 66) !important;
+  color: rgb(187, 187, 66);
+}
+
+.btn-primary {
+  background-color: transparent;
+  border-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover {
+  background-color: rgb(0, 0, 0) !important;
+  border: 1px solid rgb(0, 0, 0) !important;
+  color: rgb(255, 255, 255);
+}
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+.photocontainer {
+  width: 100%;
+}
+
+.liquorimage {
+  filter: brightness(0.50);
+  transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.liquorimage:hover {
+  filter: brightness(1);
+}
+
+.picture {
+  filter: brightness(0.50);
+  transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.picture:hover {
+  filter: brightness(1);
+}
+
+.cocktailbutton {
+  background-color: rgb(177, 32, 6);
+  border-color: rgb(177, 32, 6);
+  color: rgb(255, 255, 255);
+}
+
+.cocktailbutton:active,
+.cocktailbutton:focus,
+.cocktailbutton:hover {
+  background-color: transparent !important;
+  border: 1px solid rgb(177, 32, 6) !important;
+  color: rgb(177, 32, 6);
+}
+
+#button {
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  float: none;
+}
+
+.bottom {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  width: 90%;
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  from {
+          -webkit-mask-position: 150%;
+  }
+  to {
+          -webkit-mask-position: -50%;
+  }
+}
+
+.caption {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  width: 90%;
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s linear infinite;
+}
+
+@keyframes shine {
+  from {
+          -webkit-mask-position: 150%;
+  }
+  to {
+          -webkit-mask-position: -50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .caption {
+          position: absolute;
+          top: 60%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 32px;
+          width: 90%;
+          -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
+          -webkit-mask-size: 200%;
+          animation: shine 2s linear infinite;
+  }
+  @keyframes shine {
+          from {
+                  -webkit-mask-position: 150%;
+          }
+          to {
+                  -webkit-mask-position: -50%;
+          }
+  }
+}
+
+.cardcaption {
+  font-family: 'Oswald', sans-serif;
+}
+
+.watch-container {
+  width: 100%;
+  border-right: none;
+  border-left: none;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+
+.video-container {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+video {
+  width: 100%;
+}
+
+.paragraph {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 480px) {
+  .paragraph {
+          position: absolute;
+          top: 70%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 14px;
+          font-family: 'Oswald', sans-serif;
+          text-align: center;
+          color: rgb(255, 255, 255);
+  }
+}
+
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+  height: 457px;
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-top: 5%;
+}
+
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 480px) {
+  .title {
+          position: absolute;
+          top: 30%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 14px;
+          font-family: 'Oswald', sans-serif;
+          text-align: center;
+          color: rgb(255, 255, 255);
+  }
+}
+
+.paragraph2 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 480px) {
+  .paragraph2 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 12px;
+          font-family: 'Oswald', sans-serif;
+          text-align: center;
+          color: rgb(255, 255, 255);
+  }
+}
+
+.mapbutton {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 480px) {
+  .mapbutton {
+          position: absolute;
+          top: 72%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+  }
+}
+
+.mapbutton {
+  background-color: transparent;
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+.mapbutton:active,
+.mapbutton:focus,
+.mapbutton:hover {
+  background-color: rgb(0, 0, 0) !important;
+  border: 1px solid rgb(255, 255, 255) !important;
+  color: rgb(255, 255, 255);
+}
+
+.footer-dark {
+  background-color: black !important;
+}
